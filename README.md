@@ -14,15 +14,13 @@ available:
 usage: ranking_parser.py [-h] [--file PATH] [--url URL] [--event] [--league] [--host IP-ADDR] [--eventcode EVENT]
 
 options:
-  -h, --help            show this help message and exit
-  --file PATH, -f PATH  Filepath to a JSON with results to parse.
-  --url URL, -u URL     Network Location to fetch JSON results.
-  --event, -e           If true, event rankings will be displayed
-  --league, -l          If true, league results will be displayed
-  --host IP-ADDR, -H IP-ADDR
-                        Hostname or IP address for the scoring system. Must also provide event code.
-  --eventcode EVENT, -c EVENT
-                        FIRST Event Code, must be provide with a host.
+  * -h, --help            show this help message and exit
+  * --file PATH, -f PATH  Filepath to a JSON with results to parse.
+  * --url URL, -u URL     Network Location to fetch JSON results.
+  * --event, -e           If true, event rankings will be displayed
+  * --league, -l          If true, league results will be displayed
+  * --host IP-ADDR, -H IP-ADDR Hostname or IP address for the scoring system. Must also provide event code.
+  * --eventcode EVENT, -c EVENT FIRST Event Code, must be provide with a host.
 
 ## Application Prerequisites
 
