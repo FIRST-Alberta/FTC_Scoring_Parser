@@ -1,7 +1,6 @@
 
 import argparse
 import pandas
-from IPython.display import display
 from utilities.json_utilities import *
 from utilities.match_processor import Create_Event_Data
 from utilities.rank_utilities import Determine_Ranks
@@ -61,7 +60,7 @@ if args.event:
                       "Tie Breaker Points 1": (value["TBP1"] for value in eventResults.values()),
                       "Tie Breaker Points 2": (value["TBP2"] for value in eventResults.values())})
        
-    display(eventRanksTable)
+    print(eventRanksTable)
 
 # This will print the league Rankings
 if args.league:
@@ -71,4 +70,4 @@ if args.league:
         league_ranks[team["ranking"]] = {"Team Number": team["team"], "Team Name": team["teamName"]}
     leagueTable = pandas.DataFrame(league_ranks)
     leagueTable = leagueTable.transpose()
-    display(leagueTable)
+    print(leagueTable)
